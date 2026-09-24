@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) { 
+
+ int vet[10];
+ int valorref; 
+ int contador = 0; 
+
+ for (int i = 0; i < 10; i++) { 
+ printf("Digite o %dº número: ", i + 1);
+ scanf("%d", &vet[i]);
+} 
+ printf("Digite o valor de referência: ");
+ scanf("%d", &valorref); 
+ printf("\nNúmeros maiores que %d:\n", valorref);
+
+ for (int i = 0; i < 10; i++) {
+ if (vet[i] > valorref) {
+ printf("%d ", vet[i]); 
+ } 
+} 
+
+ for (int i = 0; i < 10; i++) {
+ if (vet[i] == valorref) { 
+contador++; 
+ } 
+} 
+ printf("\nO valor de referência aparece %d vezes.\n", contador); 
+ return 0; 
+}
