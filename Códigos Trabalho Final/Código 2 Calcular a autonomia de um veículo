@@ -1,0 +1,17 @@
+#include <stdio.h> 
+
+int main() { 
+
+ float litros;
+ float consumo;
+ float autonomia;
+
+ printf(“Litros no tanque: “); 
+ scanf(“%f”, &litros);
+ printf(“Consumo medio: “);
+ scanf(“%f”, &consumo);
+
+ autonomia = litros * consumo;
+ printf(“Autonomia do veiculo: %.2f km\n”, autonomia);
+ return 0;
+}
