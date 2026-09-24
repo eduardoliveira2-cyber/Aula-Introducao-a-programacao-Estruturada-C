@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+ int num;
+ int i;
+ int contador = 0;
+
+ for (i = 1; i <= 10; i++) {
+
+ printf(“Digite o %dº numero: “, i);
+ scanf(“%d”, &num);
+
+ if (num % 3 == 0 && num % 5 == 0) {
+ contador++;
+ }
+ }
+ printf(“\nQuantidade de numeros divisiveis por 5 e 3 ao mesmo tempo é: %d\n”, contador);
+ return 0;
+}
